@@ -1,0 +1,10 @@
+columns:
+  # The second column has two sections, `notes` and `pages`
+  - width: 1/2
+    sections:
+      pages:
+        type: pages
+        create: default
+        templates:
+          - about
+          - default
