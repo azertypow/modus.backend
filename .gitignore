@@ -49,4 +49,12 @@ Icon
 
 /site/config/.license
 
-vendor/
+# Content
+# ---------------
+
+/content
+
+# Composer
+# ---------------
+
+/vendor/
