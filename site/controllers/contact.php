@@ -39,7 +39,6 @@ return function($kirby, $pages, $page) {
                 $description    = esc($data['description']);
 
                 $kirby->email([
-                    'from'     => 'contact@modus-ge.ch',
                     'to'       => [
                         'azertypow@icloud.com',
                     ],
