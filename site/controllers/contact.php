@@ -42,6 +42,7 @@ return function($kirby, $pages, $page) {
                     'from'     => 'webmaster@modus-admin.sdrvl.ch',
                     'to'       => [
                         'azertypow@icloud.com',
+                        'info@modus-ge.ch',
                     ],
                     'body'     =>
                         "Nouvelle prise de contacte de $nom $prenom:"
