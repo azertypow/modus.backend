@@ -45,7 +45,7 @@ return function($kirby, $pages, $page) {
                         'info@modus-ge.ch',
                     ],
                     'body'     =>
-                        "Nouvelle prise de contacte de $nom $prenom:"
+                        "Nouvelle prise de contact de $nom $prenom:"
                         ."\n\nNOM\n$nom"
                         ."\n\nPRÉNOM\n$prenom"
                         ."\n\nINSTITUTION\n$institution"
