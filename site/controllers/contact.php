@@ -2,16 +2,17 @@
 return function($kirby, $pages, $page) {
 
     $alert = null;
+    $data = [];
 
     if($kirby->request()->is('POST')) {
 
         $data = [
-            'nom'           => get('nom'),
-            'prenom'        => get('prenom'),
-            'institution'   => get('institution'),
-            'email'         => get('email'),
-            'nomProjet'     => get('nomProjet'),
-            'description'   => get('description'),
+            'nom'           => strip_tags( get('nom') ),
+            'prenom'        => strip_tags( get('prenom') ),
+            'institution'   => strip_tags( get('institution') ),
+            'email'         => strip_tags( get('email') ),
+            'nomProjet'     => strip_tags( get('nomProjet') ),
+            'description'   => strip_tags( get('description') ),
         ];
 
         $rules = [
@@ -31,12 +32,12 @@ return function($kirby, $pages, $page) {
             // the data is fine, let's send the email
         } else {
             try {
-                $nom            = esc($data['nom']);
-                $prenom         = esc($data['prenom']);
-                $institution    = esc($data['institution']);
-                $email          = esc($data['email']);
-                $nomProjet      = esc($data['nomProjet']);
-                $description    = esc($data['description']);
+                $nom            = $data['nom'];
+                $prenom         = $data['prenom'];
+                $institution    = $data['institution'];
+                $email          = $data['email'];
+                $nomProjet      = $data['nomProjet'];
+                $description    = $data['description'];
 
                 $kirby->email([
                     'from'     => 'webmaster@modus-admin.sdrvl.ch',
@@ -68,7 +69,6 @@ return function($kirby, $pages, $page) {
             // no exception occurred, let's send a success message
             if (empty($alert) === true) {
                 $success = 'Votre message a bien été envoyé. Nous revenons vers vous au plus vite.';
-                $data = [];
             }
         }
     }

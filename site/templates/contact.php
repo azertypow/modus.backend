@@ -3,10 +3,10 @@
 echo json_encode([
   'succes'  => $success ?? 'null',
   'alert'   => [
-    'error'   =>  esc($alert['error'] ?? 'null'),
-    'email'   =>  esc($alert['email'] ?? 'null'),
+    'error'   =>  $alert['error'] ?? 'null',
+    'email'   =>  $alert['email'] ?? 'null',
   ],
-  'name'  =>  esc($data['name'] ?? 'null', 'attr'),
-  'email' =>  esc($data['email'] ?? 'null', 'attr'),
-  'message' =>  esc($data['message'] ?? 'null', 'attr'),
+  'name'        =>  $data['name']         ?? 'null', 'attr',
+  'email'       =>  $data['email']        ?? 'null', 'attr',
+  'message'     =>  $data['message']      ?? 'null', 'attr',
 ]);
