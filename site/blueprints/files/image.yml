@@ -9,7 +9,7 @@ title: Image
 
 accept:
   type: image
-  mime: image/jpeg
+  mime: image/jpeg, image/svg+xml
 
 columns:
   - width: 1/2

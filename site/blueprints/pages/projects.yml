@@ -1,0 +1,19 @@
+title: Projects
+
+status:
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: false
+  changeStatus: false
+
+columns:
+  - width: 2/1
+    sections:
+      pages:
+        type: pages
+        create: project
+        templates:
+          - project

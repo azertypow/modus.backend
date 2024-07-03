@@ -1,4 +1,4 @@
-title: Home
+title: Les Outils Modus
 
 status:
   listed: true
@@ -18,4 +18,6 @@ columns:
         type: info
         label: info
         text: |
-          Les infos de la page d'accueil se place en dessous de ce contenu
+          Les infos de la page "Outil Modus" se place en dessous de ce contenu
+
+# todo: remove duplicate teemplate with "home"

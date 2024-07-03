@@ -1,0 +1,35 @@
+title: Project
+
+status:
+  listed: true
+  draft: true
+
+options:
+  changeSlug: true
+  delete: true
+  changeTitle: true
+  changeStatus: true
+
+columns:
+  - width: 2/1
+    fields:
+      content:
+        extends: fields/body
+        fields:
+          headerImage:
+            required: true
+          showInNav:
+            default: false
+          body:
+            fieldsets:
+              - mdheading
+              - body
+              - mdimage
+              - list
+      pdfFile:
+        type: files
+        label: Fichier PDF
+        multiple: false
+        require: true
+        accept:
+          - application/pdf

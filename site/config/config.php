@@ -9,6 +9,11 @@
  */
 return [
     'debug' => true,
+    'hooks' => [
+        'page.render:before' => function ($event) {
+            header("Access-Control-Allow-Origin: *");
+        }
+    ],
     'routes' => [
         [
             'pattern' => '/contact',

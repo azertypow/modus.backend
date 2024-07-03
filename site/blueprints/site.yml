@@ -1,10 +1,11 @@
 columns:
-  # The second column has two sections, `notes` and `pages`
   - width: 1/2
     sections:
       pages:
         type: pages
-        create: default
+        #create: default
         templates:
           - home
           - default
+          - projects
+          - outils-modus
