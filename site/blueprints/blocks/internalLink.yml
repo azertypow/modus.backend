@@ -15,6 +15,24 @@ fields:
     uploads:
       template: blocks/image
 
+  style:
+    width: 1/4
+    label: Style
+    type: select
+    default: default
+    options:
+      - default
+      - circle
+  width:
+    width: 1/4
+    label: Width
+    type: toggle
+    default: false
+    text:
+      - regular
+      - large
+
+
   linkTitle:
     label: Titre
     type: text
