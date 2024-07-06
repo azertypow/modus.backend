@@ -10,6 +10,14 @@ options:
   changeStatus: false
 
 columns:
+  - width: 1/1
+    fields:
+      content:
+        extends: fields/body
+        fields:
+          headerImage:
+            required: true
+          body: false
   - width: 2/1
     sections:
       pages:
