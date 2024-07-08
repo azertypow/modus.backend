@@ -1,4 +1,2 @@
 <?php /** @var \Kirby\Cms\Block $block */ ?>
-
-
-coucou
+<<?= $level = $block->level()->or('h2') ?>><?= $block->text() ?></<?= $level ?>>
