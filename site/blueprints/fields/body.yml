@@ -35,10 +35,10 @@ fields:
     label: Contenu de la page
     type: blocks
     fieldsets:
-      - mdheading
       - body
+      - internalLink
+      - listPoints
+      - mdheading
       - mdimage
-      - list
       - profiles
       - simpleText
-      - internalLink

@@ -1,0 +1,15 @@
+title: Lite mise en avant
+
+icon: text
+preview: titleContent
+
+fields:
+  titleContent:
+    label: Titre de la list
+    inline: true
+    type: writer
+    placeholder: Titre de la liste
+
+  text:
+    label: Contenu de la liste
+    type: list
