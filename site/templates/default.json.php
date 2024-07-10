@@ -14,11 +14,19 @@ $json = [];
 
 $body = $page->body()->toBlocks()->map(function ($item){
 
+  $profilesImages = $item->profiles()->toStructure()->map(function ($item) {
+    return [
+      'content' => $item->toArray(),
+      'image'   => array_values( Utils::getImageArrayDataInPage($item->image()->toFiles()) ),
+    ];
+  })->data();
+
   $content = $item->toArray();
 
   return [
     'image'     => array_values( Utils::getImageArrayDataInPage($item->image()->toFiles()) ),
     'content'   => $content,
+    'profilesImages' => $profilesImages,
   ];
 })->data();
 
