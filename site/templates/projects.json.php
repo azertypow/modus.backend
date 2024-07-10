@@ -17,8 +17,9 @@ $children = $page->children()->map(function ($item){
   $content = $item->content();
 
   return [
-    'headerImage'     => array_values( Utils::getImageArrayDataInPage( $content->headerimage()->toFiles() ) ),
-    'content'   => $content->toArray(),
+    'headerImage' => array_values( Utils::getImageArrayDataInPage( $content->headerimage()->toFiles() ) ),
+    'slug'        => $item->slug(),
+    'content'     => $content->toArray(),
   ];
 })->data();
 
