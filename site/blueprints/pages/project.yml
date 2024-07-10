@@ -26,7 +26,18 @@ columns:
               - body
               - mdimage
               - list
+      device:
+        label: Dispositif
+        type: select
+        options:
+          platform: La plateforme
+          laboratory: Le laboratoire
+          library: La Bibliothèque
+          imaginary: La fabrique des imaginaires
+          planting: La plantation
+
       pdfFile:
+        width: 1/2
         type: files
         label: Fichier PDF
         multiple: false
