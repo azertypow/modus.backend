@@ -29,6 +29,7 @@ $json['options'] = [
 ];
 
 $json['body'] = $body;
+$json['title'] = $page->title();
 
 echo json_encode($json);
 
