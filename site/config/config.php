@@ -26,5 +26,16 @@ return [
                 ]);
             }
         ],
+        [
+            'pattern' => '/pages-info.json',
+            'method' => 'GET',
+            'action' => function () {
+                header("Access-Control-Allow-Origin: *");
+                return Page::factory([
+                    'template'  => 'pages-info',
+                    'slug'      => 'pages-info',
+                ]);
+            }
+        ],
     ]
 ];
