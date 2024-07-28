@@ -3,13 +3,13 @@ title: Simple Page
 icon: 📝
 
 status:
-  draft: true
-  unlisted:
-    label: Hidden Page
-    text: The page is not listed in the main menu
-  listed:
-    label: Menu Page
-    text: The page is listed in the main menu
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  changeStatus: false
 
 columns:
   - width: 1/1

@@ -6,7 +6,7 @@ status:
 options:
   changeSlug: false
   delete: false
-  changeTitle: false
+  changeTitle: true
   changeStatus: false
 
 columns:
