@@ -18,8 +18,7 @@ columns:
         fields:
           headerImage:
             required: true
-          showInNav:
-            default: false
+          showInNav: false
           body:
             fieldsets:
               - mdheading
