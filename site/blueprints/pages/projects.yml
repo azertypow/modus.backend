@@ -18,7 +18,7 @@ columns:
           headerImage:
             required: true
           body: false
-  - width: 2/1
+  - width: 1/2
     sections:
       pages:
         type: pages

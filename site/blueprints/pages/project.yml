@@ -11,7 +11,7 @@ options:
   changeStatus: true
 
 columns:
-  - width: 2/1
+  - width: 1/2
     fields:
       content:
         extends: fields/body
