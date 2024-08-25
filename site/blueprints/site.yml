@@ -2,6 +2,7 @@ columns:
   - width: 1/2
     sections:
       pages:
+        image: false
         type: pages
         create: default
         templates:
