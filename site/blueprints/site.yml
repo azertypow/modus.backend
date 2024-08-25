@@ -3,7 +3,7 @@ columns:
     sections:
       pages:
         type: pages
-        #create: default
+        create: default
         templates:
           - home
           - default
