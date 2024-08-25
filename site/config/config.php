@@ -16,6 +16,12 @@ return [
     ],
     'routes' => [
         [
+            'pattern' => '/',
+            'action'  => function() {
+                return go('/panel');
+            }
+        ],
+        [
             'pattern' => '/contact',
             'method' => 'GET|POST',
             'action' => function () {
