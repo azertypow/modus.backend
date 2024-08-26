@@ -11,6 +11,10 @@ options:
   changeTitle: true
   changeStatus: false
 
+create:
+  redirect: false
+  status: listed
+
 columns:
   - width: 1/1
     fields:
