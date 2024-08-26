@@ -2,6 +2,9 @@ title: Lien interne
 
 icon: bolt
 
+preview: fields
+wysiwyg: true
+
 fields:
   image:
     required: true
