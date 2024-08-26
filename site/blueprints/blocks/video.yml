@@ -1,0 +1,21 @@
+name: field.blocks.video.name
+icon: video
+preview: video
+fields:
+  url:
+    label: field.blocks.video.url.label
+    type: url
+    placeholder: field.blocks.video.url.placeholder
+  poster:
+    label: field.blocks.video.poster
+    type: files
+    query: model.images
+    multiple: false
+    image:
+      back: black
+    uploads:
+      template: blocks/image
+  caption:
+    label: field.blocks.video.caption
+    type: writer
+    inline: true
