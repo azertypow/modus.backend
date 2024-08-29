@@ -1,3 +1,8 @@
+title: modus
+
+options:
+  preview: https://modus.sdrvl.ch/
+
 columns:
   - width: 1/2
     sections:
