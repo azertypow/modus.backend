@@ -26,6 +26,7 @@ columns:
               - body
               - mdimage
               - list
+              - video
       device:
         label: Dispositif
         type: select
