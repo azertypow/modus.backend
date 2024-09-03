@@ -5,6 +5,7 @@ wysiwyg: true
 preview: fields
 fields:
   text:
+    label: false
     type: writer
     marks:
       - bold
