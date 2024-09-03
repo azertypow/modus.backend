@@ -2,6 +2,7 @@ title: Liste mise en avant
 
 icon: text
 preview: fields
+wysiwyg: true
 
 fields:
   titleContent:
