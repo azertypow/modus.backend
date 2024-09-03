@@ -7,7 +7,7 @@ fields:
     label: field.blocks.video.url.label
     type: url
     placeholder: field.blocks.video.url.placeholder
-  poster:
+  image:
     label: field.blocks.video.poster
     type: files
     query: model.images
