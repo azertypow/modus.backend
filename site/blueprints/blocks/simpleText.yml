@@ -2,7 +2,7 @@ title: Texte simple
 
 icon: text
 wysiwyg: true
-preview: text
+preview: fields
 
 fields:
   text:

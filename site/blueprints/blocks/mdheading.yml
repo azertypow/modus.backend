@@ -1,7 +1,7 @@
 name: Titre de sections
 icon: title
 wysiwyg: true
-preview: heading
+preview: fields
 fields:
   level:
     label: field.blocks.heading.level
