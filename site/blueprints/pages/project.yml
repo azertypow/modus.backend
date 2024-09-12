@@ -27,6 +27,7 @@ columns:
               - mdimage
               - list
               - video
+              - linksSection
       device:
         label: Dispositif
         type: select
