@@ -9,6 +9,7 @@ options:
   changeSlug: false
   delete: false
   changeTitle: true
+  changeStatus: false
 
 create:
   redirect: false
