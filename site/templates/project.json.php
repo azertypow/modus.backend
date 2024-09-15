@@ -26,6 +26,7 @@ $json['options'] = [
   'showNewsletter'  => $page->showNewsletter()->toBool(),
   'headerTitle'     => $page->headerTitle()->value(),
   'headerImage'     => $page->headerImage()->toFile() ? Utils::getJsonEncodeImageData( $page->headerImage()->toFile() ) : null,
+  'category'        => $page->device()->value(),
 ];
 
 $json['body'] = $body;
