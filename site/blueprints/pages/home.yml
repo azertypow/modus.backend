@@ -14,8 +14,3 @@ columns:
     fields:
       content:
         extends: fields/body
-      info:
-        type: info
-        label: info
-        text: |
-          Les infos de la page d'accueil se place en dessous de ce contenu
