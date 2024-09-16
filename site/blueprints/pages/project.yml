@@ -37,12 +37,3 @@ columns:
           library: La Bibliothèque
           imaginary: La fabrique des imaginaires
           planting: La plantation
-
-      pdfFile:
-        width: 1/2
-        type: files
-        label: Fichier PDF
-        multiple: false
-        require: true
-        accept:
-          - application/pdf
