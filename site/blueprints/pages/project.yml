@@ -31,9 +31,19 @@ columns:
       device:
         label: Dispositif
         type: select
+        width: 1/2
         options:
           platform: La plateforme
           laboratory: Le laboratoire
           library: La Bibliothèque
           imaginary: La fabrique des imaginaires
           planting: La plantation
+
+      date:
+        required: false
+        width: 1/2
+        label: Date
+        type: date
+        default: false
+        display: YYYY-MM
+
