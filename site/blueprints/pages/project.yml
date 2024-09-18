@@ -38,12 +38,28 @@ columns:
           library: La Bibliothèque
           imaginary: La fabrique des imaginaires
           planting: La plantation
-
-      date:
-        required: false
-        width: 1/2
+  - width: 1/2
+    fields:
+      dateStart:
+        required: true
+        width: 1/1
         label: Date
         type: date
-        default: false
         display: YYYY-MM
+
+      isProjectWithDuration:
+        required: true
+        type: toggle
+        width: 1/2
+        label: Ce projet a une date de fin, une durée?
+        default: false
+
+      dateEnd:
+        required: false
+        width: 1/1
+        label: Date de fin
+        type: date
+        display: YYYY-MM
+        when:
+          isProjectWithDuration: true
 
