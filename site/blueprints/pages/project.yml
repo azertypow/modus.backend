@@ -51,7 +51,7 @@ columns:
         required: false
         type: toggle
         width: 1/2
-        label: Ce projet a une date de fin, une durée?
+        label: Ce projet a une durée?
         default: false
 
       dateEnd:
