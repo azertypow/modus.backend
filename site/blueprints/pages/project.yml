@@ -48,7 +48,7 @@ columns:
         display: YYYY-MM
 
       isProjectWithDuration:
-        required: true
+        required: false
         type: toggle
         width: 1/2
         label: Ce projet a une date de fin, une durée?
