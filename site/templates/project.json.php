@@ -22,12 +22,14 @@ $body = $page->body()->toBlocks()->map(function ($item){
 })->data();
 
 $json['options'] = [
-  'showInNav'       => $page->showMenu()->toBool(),
-  'showNewsletter'  => $page->showNewsletter()->toBool(),
-  'headerTitle'     => $page->headerTitle()->value(),
-  'headerImage'     => $page->headerImage()->toFile() ? Utils::getJsonEncodeImageData( $page->headerImage()->toFile() ) : null,
-  'category'        => $page->device()->value(),
-  'date'            => $page->date()->value(),
+  'showInNav'             => $page->showMenu()->toBool(),
+  'showNewsletter'        => $page->showNewsletter()->toBool(),
+  'headerTitle'           => $page->headerTitle()->value(),
+  'headerImage'           => $page->headerImage()->toFile() ? Utils::getJsonEncodeImageData( $page->headerImage()->toFile() ) : null,
+  'category'              => $page->device()->value(),
+  'dateStart'             => $page->dateStart()->value(),
+  'isProjectWithDuration' => $page->isProjectWithDuration()->value(),
+  'dateEnd'               => $page->dateEnd()->value(),
 ];
 
 $json['body'] = $body;
