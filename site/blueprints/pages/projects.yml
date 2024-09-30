@@ -21,6 +21,8 @@ columns:
   - width: 1/2
     sections:
       pages:
+        sortBy: dateStart
+        sortable: false
         type: pages
         create: project
         templates:
