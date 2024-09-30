@@ -11,7 +11,7 @@ echo json_encode(value: [
   'title' => $site->title(),
   'children' => array_values($site->children()->map(callback: fn($item) => [
 //      'global' => $item->toArray(),
-    'children' => $item->children(),
+    'children' => $item->children()->listed()->sortBy('dateStart'),
     'title' => $item->title(),
     'headerimage' => $item->headerimage(),
     'showinnav' => $item->showinnav(),
