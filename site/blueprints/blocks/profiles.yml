@@ -31,3 +31,8 @@ fields:
       description:
         label: Description
         type: text
+      link:
+        label: Lien linkedin
+        type: url
+        validate:
+          match: "/linkedin/"
