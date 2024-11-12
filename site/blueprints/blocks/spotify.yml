@@ -1,0 +1,13 @@
+name: Spotify
+icon: radio
+preview: fields
+wysiwyg: true
+fields:
+  url:
+    label: Lien du podcast Spotify
+    type: url
+    placeholder: https://open.spotify.com/episode/…
+  caption:
+    label: Légende
+    type: writer
+    inline: true
