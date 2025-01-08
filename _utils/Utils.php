@@ -30,6 +30,7 @@ class Utils
     static function getJsonEncodeImageData(\Kirby\Cms\File $file): array
     {
         return [
+            'focus' => $file->content()->focus()->value(),
             'caption' => $file->caption()->value(),
             'alt' => $file->alt()->value(),
             'link' => $file->link()->value(),
