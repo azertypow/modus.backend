@@ -11,3 +11,20 @@ fields:
     label: Légende
     type: writer
     inline: true
+    marks:
+      - bold
+      - italic
+      - link
+  credits:
+    width: 2/3
+    label: crédits
+    type: writer
+    inline: true
+    marks:
+      - bold
+      - italic
+      - link
+  date:
+    width: 1/3
+    label: Date
+    type: date
