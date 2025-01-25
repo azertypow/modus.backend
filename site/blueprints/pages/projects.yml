@@ -18,12 +18,16 @@ columns:
           headerImage:
             required: true
           body: false
-  - width: 1/2
+  - width: 1/1
     sections:
       pages:
+        layout: cards
+        cover: true
         sortBy: dateStart
         sortable: false
         type: pages
         create: project
+        search: true
+        limit: 500
         templates:
           - project
