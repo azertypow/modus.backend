@@ -23,7 +23,7 @@ columns:
       pages:
         layout: cards
         cover: true
-        sortBy: dateStart
+        sortBy: dateStart desc
         sortable: false
         type: pages
         create: project
