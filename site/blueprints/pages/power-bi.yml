@@ -17,4 +17,5 @@ sections:
     fields:
       power_bi_link:
         type: url
+        required: true
 
