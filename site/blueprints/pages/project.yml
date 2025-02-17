@@ -101,3 +101,5 @@ sections:
     type: pages
     label: Power BI
     templates: power-bi
+    max: 1
+    
