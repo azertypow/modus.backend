@@ -11,8 +11,12 @@ options:
   changeStatus: true
   preview: "https://modus.sdrvl.ch/project/{{ page.slug }}"
 
-columns:
-  - width: 1/1
+
+
+
+sections:
+  fields:
+    type: fields
     fields:
       content:
         extends: fields/body
@@ -67,14 +71,16 @@ columns:
           sante: "santé"
           seniors: "seniors"
 
-  - width: 1/2
-    fields:
       dateStart:
         required: true
-        width: 1/1
+        width: 1/2
         label: Date
         type: date
         display: YYYY-MM
+
+      gap:
+        type: gap
+        width: 1/2
 
       isProjectWithDuration:
         required: false
@@ -85,10 +91,13 @@ columns:
 
       dateEnd:
         required: false
-        width: 1/1
+        width: 1/2
         label: Date de fin
         type: date
         display: YYYY-MM
         when:
           isProjectWithDuration: true
-
+  subpages:
+    type: pages
+    label: Power BI
+    templates: power-bi

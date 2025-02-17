@@ -1,0 +1,20 @@
+title: Power BI
+
+status:
+  listed: true
+  draft: true
+
+options:
+  changeSlug: true
+  delete: true
+  changeTitle: true
+  changeStatus: true
+  preview: "https://modus.sdrvl.ch/project/{{ page.slug }}"
+
+sections:
+  fields:
+    type: fields
+    fields:
+      power_bi_link:
+        type: url
+
