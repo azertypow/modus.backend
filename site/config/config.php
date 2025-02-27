@@ -27,6 +27,13 @@ return [
                 return go('https://modus-ge.ch/forms/declic-mobilite');
             }
         ],
+
+        [
+            'pattern' => '/declic-mobilite',
+            'action'  => function() {
+                return go('https://modus-ge.ch/forms/declic-mobilite');
+            }
+        ],
         [
             'pattern' => '/contact',
             'method' => 'GET|POST',
