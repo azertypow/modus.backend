@@ -16,6 +16,12 @@ return [
     ],
     'routes' => [
         [
+            'pattern' => '/declic-mobilite',
+            'action'  => function() {
+                return go('https://modus-ge.ch/forms/declic-mobilite');
+            }
+        ],
+        [
             'pattern' => '/',
             'action'  => function() {
                 return go('/panel');
@@ -23,13 +29,6 @@ return [
         ],
         [
             'pattern' => '/links-tree/formulaire_inscription_202502',
-            'action'  => function() {
-                return go('https://modus-ge.ch/forms/declic-mobilite');
-            }
-        ],
-
-        [
-            'pattern' => '/declic-mobilite',
             'action'  => function() {
                 return go('https://modus-ge.ch/forms/declic-mobilite');
             }
