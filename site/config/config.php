@@ -24,7 +24,7 @@ return [
         [
             'pattern' => '/links-tree/formulaire_inscription_202502',
             'action'  => function() {
-                return go('https://modus-ge.ch/declic-mobilite');
+                return go('https://modus-ge.ch/forms/declic-mobilite');
             }
         ],
         [
