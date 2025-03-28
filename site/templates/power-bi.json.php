@@ -11,10 +11,13 @@ use Kirby\Cms\Site;
 
 $json = [];
 
+$json['page'] = $page->toArray();
 
-$json['power_bi_link'] = $page->power_bi_link()->value();
-$json['title'] = $page->title()->value();
-
-
+$json['power_bi_pages'] = $page->power_bi_pages()->toStructure()->map(function ($item) {
+  return [
+    'content' => $item->toArray(),
+    'image'   => array_values( Utils::getImageArrayDataInPage($item->image()->toFiles()) ),
+  ];
+})->data();
 
 echo json_encode($json);
