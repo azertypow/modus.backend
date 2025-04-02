@@ -4,7 +4,15 @@ options:
   preview: https://modus-ge.ch.ch/
 
 columns:
-  - width: 1/2
+  - width: 1/3
+    fields:
+      files:
+        label:
+          fr: Fichiers
+        type: files
+        layout: small
+
+  - width: 2/3
     sections:
       pages:
         image: false
