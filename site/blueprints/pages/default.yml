@@ -9,6 +9,7 @@ options:
   changeSlug: false
   delete: false
   changeTitle: true
+  preview: "https://modus-ge.ch"
 
 create:
   redirect: false

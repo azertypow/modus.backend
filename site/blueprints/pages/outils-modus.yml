@@ -8,6 +8,7 @@ options:
   delete: false
   changeTitle: true
   changeStatus: false
+  preview: "https://modus-ge.ch"
 
 columns:
   - width: 1/1

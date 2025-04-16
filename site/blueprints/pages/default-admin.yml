@@ -10,6 +10,7 @@ options:
   delete: false
   changeTitle: true
   changeStatus: false
+  preview: "https://modus-ge.ch"
 
 create:
   redirect: false

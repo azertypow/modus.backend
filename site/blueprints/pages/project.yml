@@ -9,7 +9,7 @@ options:
   delete: true
   changeTitle: true
   changeStatus: true
-  preview: "https://modus-ge.ch.ch/project/{{ page.slug }}"
+  preview: "https://modus-ge.ch/project/{{ page.slug }}"
 
 
 
@@ -102,4 +102,3 @@ sections:
     label: Power BI
     templates: power-bi
     max: 1
-    
