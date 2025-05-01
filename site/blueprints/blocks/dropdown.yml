@@ -1,6 +1,4 @@
-title:
-  fr: Liste déroulante
-  en: Dropdown
+title: Dropdown
 
 icon: list-bullet
 
@@ -9,69 +7,69 @@ wysiwyg: true
 
 fields:
 
-  dropdown:
+  title:
     label:
-      fr: Liste déroulante
-      en: Dropdown
-    type: structure
-    columns:
-      title:
-        width: 1/1
-    fields:
-      title:
-        label:
-          fr: Titre
-          en: Title
-        type: text
+      fr: Titre
+      en: Title
+    type: text
 
-      content:
-        label:
-          fr: Corps de texte
-          en: Content
-        type: writer
-        nodes:
-          - paragraph
-          - bulletList
-          - orderedList
-        marks:
-          - bold
-          - italic
-          - underline
-          - link
-
-      content_test:
-        label: Contenu de la page
-        type: blocks
-        fieldsets:
-          - text
-          table:
+  dropdown_content:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      content_text:
+        title: text
+        preview: fields
+        wysiwyg: true
+        fields:
+          content_text_content:
+            label: Corps de texte
+            type: writer
+            nodes:
+              - paragraph
+              - bulletList
+              - orderedList
+            marks:
+              - bold
+              - italic
+              - underline
+              - link
+      content_table:
+        title: Tableau
+        preview: fields
+        wysiwyg: true
+        fields:
+          rows:
+            label: Colonne
+            type: structure
+            columns:
+              content_table_title:
+                width: 1/1
             fields:
-              rows:
-                type: structure
-                columns:
-                  dish:
-                    width: 1/4
-                  description:
-                    width: 1/4
-                  price:
-                    width: 1/2
-                    align: right
-                    after: "USD"
-                fields:
-                  dish:
-                    type: writer
-                    marks: false
-                    inline: true
-                  description:
-                    type: text
-                  price:
-                    type: number
-
-      link:
-        label:
-          fr: Lien
-          en: Link
-        type: url
+              content_table_title:
+                label: titre de la colonne
+                type: text
+              content_table_content:
+                label: contenu de la colonne
+                type: blocks
+                fieldsets:
+                  content_table_content_text:
+                    title: cellule
+                    preview: fields
+                    wysiwyg: true
+                    fields:
+                      content_table_content_text_content:
+                        label: Corps de texte
+                        type: writer
+                        nodes:
+                          - paragraph
+                          - bulletList
+                          - orderedList
+                        marks:
+                          - bold
+                          - italic
+                          - underline
+                          - link
 
   #          content_table:
   #            label: tableau
