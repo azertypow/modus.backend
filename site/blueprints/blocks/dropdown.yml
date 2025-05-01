@@ -39,8 +39,58 @@ fields:
           - underline
           - link
 
+      content_test:
+        label: Contenu de la page
+        type: blocks
+        fieldsets:
+          - text
+          table:
+            fields:
+              rows:
+                type: structure
+                columns:
+                  dish:
+                    width: 1/4
+                  description:
+                    width: 1/4
+                  price:
+                    width: 1/2
+                    align: right
+                    after: "USD"
+                fields:
+                  dish:
+                    type: writer
+                    marks: false
+                    inline: true
+                  description:
+                    type: text
+                  price:
+                    type: number
+
       link:
         label:
           fr: Lien
           en: Link
         type: url
+
+  #          content_table:
+  #            label: tableau
+  #            type: structure
+  #            columns:
+  #              dish:
+  #                width: 1/4
+  #              description:
+  #                width: 1/4
+  #              price:
+  #                width: 1/2
+  #                align: right
+  #                after: "USD"
+  #            fields:
+  #              dish:
+  #                type: writer
+  #                marks: false
+  #                inline: true
+  #              description:
+  #                type: text
+  #              price:
+  #                type: number
