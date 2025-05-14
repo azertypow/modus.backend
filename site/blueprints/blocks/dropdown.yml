@@ -8,10 +8,19 @@ wysiwyg: true
 fields:
 
   title:
-    label:
-      fr: Titre
-      en: Title
+    label: Titre
     type: text
+
+  dropdown_intro:
+    label: Texte d'intro
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+    nodes:
+      - paragraph
 
   dropdown_content:
     label: Contenu
