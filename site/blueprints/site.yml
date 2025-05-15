@@ -11,6 +11,8 @@ columns:
           fr: Fichiers
         type: files
         layout: small
+        uploads:
+          template: pdf
 
   - width: 2/3
     sections:

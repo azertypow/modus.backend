@@ -1,0 +1,11 @@
+title: PDF
+
+fields:
+  info:
+    type: info
+    text: |
+      lien de partage:
+
+      modus-ge.ch/media/site/{{file.filename}}
+
+      <a target='_blank' href='https://modus-ge.ch/media/site/{{file.filename}}' >tester ici</a>
