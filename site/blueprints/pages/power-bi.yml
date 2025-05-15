@@ -23,12 +23,20 @@ sections:
         type: structure
         fields:
           image:
+            label: Icon
             min: 0
             max: 1
             type: files
             layout: cards
             uploads:
               template: image
+
+          power_bi_pages_number:
+            label: Chiffre mis en avant
+            type: text
+            inline: true
+            marks: false
+
 
           power_bi_pages_title:
             label: Titre
@@ -43,19 +51,6 @@ sections:
               - bold
               - italic
 
-          power_bi_pages_number:
-            label: Chiffre mis en avant
-            type: text
-            inline: true
-            marks: false
-
-          power_bi_pages_number_descritpion:
-            label: Description du chiffre mis en avant
-            type: text
-            inline: true
-            marks:
-              - bold
-              - italic
           power_bi_pages_link:
             label: Lien vers une page
             type: url
