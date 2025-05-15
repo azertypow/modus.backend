@@ -38,6 +38,9 @@ fields:
               - paragraph
               - bulletList
               - orderedList
+              - heading
+            headings:
+              - 4
             marks:
               - bold
               - italic
