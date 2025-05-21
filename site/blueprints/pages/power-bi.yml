@@ -41,7 +41,7 @@ sections:
           power_bi_pages_title:
             label: Titre
             type: text
-            required: true
+            required: false
 
           power_bi_pages_description:
             label: Description
