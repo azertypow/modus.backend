@@ -1,0 +1,24 @@
+title: Les Outils Modus
+
+status:
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  changeStatus: false
+  preview: "https://modus-ge.ch"
+
+columns:
+  - width: 1/1
+    fields:
+      content:
+        extends: fields/body
+      info:
+        type: info
+        label: info
+        text: |
+          Les infos de la page "Outil Modus" se place en dessous de ce contenu
+
+# todo: remove duplicate teemplate with "home"

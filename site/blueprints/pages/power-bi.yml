@@ -1,0 +1,56 @@
+title: Power BI
+
+status:
+  listed: true
+  draft: true
+
+options:
+  changeSlug: true
+  delete: true
+  changeTitle: true
+  changeStatus: true
+  preview: "https://modus-ge.ch/project/{{ page.parent.slug }}/{{ page.slug }}"
+
+sections:
+  fields:
+    type: fields
+    fields:
+      power_bi_link:
+        type: url
+        required: true
+
+      power_bi_pages:
+        type: structure
+        fields:
+          image:
+            label: Icon
+            min: 0
+            max: 1
+            type: files
+            layout: cards
+            uploads:
+              template: image
+
+          power_bi_pages_number:
+            label: Chiffre mis en avant
+            type: text
+            inline: true
+            marks: false
+
+
+          power_bi_pages_title:
+            label: Titre
+            type: text
+            required: false
+
+          power_bi_pages_description:
+            label: Description
+            type: writer
+            inline: true
+            marks:
+              - bold
+              - italic
+
+          power_bi_pages_link:
+            label: Lien vers une page
+            type: url

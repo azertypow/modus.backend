@@ -1,0 +1,16 @@
+title: Liste mise en avant
+
+icon: text
+preview: fields
+wysiwyg: true
+
+fields:
+  titleContent:
+    label: Titre de la list
+    inline: true
+    type: writer
+    placeholder: Titre de la liste
+
+  text:
+    label: Contenu de la liste
+    type: list

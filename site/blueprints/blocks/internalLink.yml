@@ -1,0 +1,61 @@
+title: Lien interne
+
+icon: bolt
+
+preview: fields
+wysiwyg: true
+
+fields:
+  image:
+    required: true
+    width: 2/4
+    label: Image de couverture
+    type: files
+    query: model.images
+    multiple: false
+    image:
+      back: black
+    uploads:
+      template: blocks/image
+
+  style:
+    width: 1/4
+    label: Style
+    type: select
+    default: default
+    options:
+      default: Par défaut
+      circle: Circle
+      device: Dispositifs
+  width:
+    width: 1/4
+    label: Width
+    type: toggle
+    default: false
+    text:
+      - regular
+      - large
+
+
+  linkTitle:
+    label: Titre
+    type: text
+
+  text:
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+    nodes:
+      - paragraph
+    placeholder: field.blocks.text.placeholder
+
+  link:
+    label: Slug de la page
+    help: |
+      exemple:
+      projets/exemple
+    required: true
+    type: text

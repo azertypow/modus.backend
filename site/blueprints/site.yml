@@ -1,0 +1,38 @@
+title: modus
+
+options:
+  preview: https://modus-ge.ch.ch/
+
+columns:
+  - width: 1/3
+    fields:
+      files:
+        label:
+          fr: Fichiers
+        type: files
+        layout: small
+        uploads:
+          template: pdf
+
+  - width: 2/3
+    sections:
+      tagList:
+        width: 1/2
+        label: "Tags / Catégories"
+        type: pages
+        status: listed
+        image: false
+        templates: seasons
+        layout: cards
+        size: medium
+
+      pages:
+        image: false
+        type: pages
+        create: default
+        templates:
+          - home
+          - default
+          - default-admin
+          - projects
+          - outils-modus

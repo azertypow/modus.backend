@@ -1,0 +1,106 @@
+title: Dropdown
+
+icon: list-bullet
+
+preview: fields
+wysiwyg: true
+
+fields:
+
+  title:
+    label: Titre
+    type: text
+
+  dropdown_intro:
+    label: Texte d'intro
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+    nodes:
+      - paragraph
+
+  dropdown_content:
+    label: Contenu
+    type: blocks
+    fieldsets:
+      content_text:
+        title: text
+        preview: fields
+        wysiwyg: true
+        fields:
+          content_text_content:
+            label: Corps de texte
+            type: writer
+            nodes:
+              - paragraph
+              - bulletList
+              - orderedList
+              - heading
+            headings:
+              - 4
+            marks:
+              - bold
+              - italic
+              - underline
+              - link
+      content_table:
+        title: Tableau
+        preview: fields
+        wysiwyg: true
+        fields:
+          rows:
+            label: Colonne
+            type: structure
+            columns:
+              content_table_title:
+                width: 1/1
+            fields:
+              content_table_title:
+                label: titre de la colonne
+                type: text
+              content_table_content:
+                label: contenu de la colonne
+                type: blocks
+                fieldsets:
+                  content_table_content_text:
+                    title: cellule
+                    preview: fields
+                    wysiwyg: true
+                    fields:
+                      content_table_content_text_content:
+                        label: Corps de texte
+                        type: writer
+                        nodes:
+                          - paragraph
+                          - bulletList
+                          - orderedList
+                        marks:
+                          - bold
+                          - italic
+                          - underline
+                          - link
+
+  #          content_table:
+  #            label: tableau
+  #            type: structure
+  #            columns:
+  #              dish:
+  #                width: 1/4
+  #              description:
+  #                width: 1/4
+  #              price:
+  #                width: 1/2
+  #                align: right
+  #                after: "USD"
+  #            fields:
+  #              dish:
+  #                type: writer
+  #                marks: false
+  #                inline: true
+  #              description:
+  #                type: text
+  #              price:
+  #                type: number

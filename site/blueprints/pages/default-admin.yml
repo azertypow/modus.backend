@@ -1,0 +1,23 @@
+title: Simple Page
+
+icon: 📝
+
+status:
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  changeTitle: true
+  changeStatus: false
+  preview: "https://modus-ge.ch/{{ page.slug }}"
+
+create:
+  redirect: false
+  status: listed
+
+columns:
+  - width: 1/1
+    fields:
+      content:
+        extends: fields/body

@@ -1,0 +1,25 @@
+title: Section Liens
+
+preview: fields
+wysiwyg: true
+
+fields:
+
+  title:
+    label: titre
+    type: text
+
+  links:
+    label: Liens
+    type: structure
+    columns:
+      name:
+        width: 1/1
+    fields:
+      name:
+        label: Nom
+        type: text
+      url:
+        label: URL
+        type: url
+

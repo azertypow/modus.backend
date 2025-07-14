@@ -1,0 +1,17 @@
+title: Texte simple
+
+icon: text
+wysiwyg: true
+preview: fields
+
+fields:
+  text:
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - link
+    nodes:
+      - paragraph
+    placeholder: field.blocks.text.placeholder
