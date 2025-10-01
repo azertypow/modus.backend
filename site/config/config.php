@@ -2,7 +2,7 @@
 
 return [
     'debug' => true,
-    'url' => 'https://test.modus-ge.ch',
+    'url' => 'https://cms.modus-ge.ch',
     'panel' => [
         'install' => true,
     ],
